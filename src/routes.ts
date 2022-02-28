@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.post("/users", UseController.create);
 router.get("/users", UseController.findAll);
-router.get("/users/:userID", UseController.findOne);
-router.put("/users/:userID", UseController.update);
-router.delete("/users", UseController.destroy);
+router.get("/users/:userId", UseController.findOne);
+router.put("/users/:userId", UseController.update);
+router.delete("/users/:userId", UseController.destroy);
 
 export { router };
